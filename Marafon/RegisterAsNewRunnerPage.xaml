@@ -1,0 +1,57 @@
+﻿<Page x:Class="Marafon.RegisterAsNewRunnerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Marafon"
+      mc:Ignorable="d" 
+      d:DesignHeight="427" d:DesignWidth="700"
+      Title="RegisterAsNewRunnerPage">
+
+    <Grid>
+        <Label x:Name="label" Background="{DynamicResource dark_gray}" Content="MARATHON SKILLS 2022" FontWeight="Bold" Foreground="White" HorizontalContentAlignment="Left" Padding="100,0,0,0" Height="42" VerticalAlignment="Top" />
+        <Button x:Name="button_back" Click="button_back_Click" Content="Назад" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="25" Width="65"/>
+        <RichTextBox HorizontalAlignment="Center" Height="64" Margin="0,50,0,0" VerticalAlignment="Top" Width="616">
+            <FlowDocument TextAlignment="Center">
+                <Paragraph>
+                    <Run Text="Регистрация бегуна" FontSize="20" FontWeight="Bold"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="Пожалуйста заполните всю информацию, чтобы зарегистрироваться в качестве бегуна"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label Content="Email:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" FontSize="16" Margin="30,125,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <TextBox x:Name="textbox_email" HorizontalAlignment="Left" Margin="200,125,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="140" Height="30" VerticalContentAlignment="Center"/>
+
+        <Label Content="Пароль:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" FontSize="16" Margin="30,165,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <TextBox x:Name="textbox_password" HorizontalAlignment="Left" Margin="200,165,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="140" Height="30" VerticalContentAlignment="Center"/>
+
+        <Label Content="Повторите пароль:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" FontSize="16" Margin="30,205,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <TextBox x:Name="textbox_repassword" HorizontalAlignment="Left" Margin="200,205,0,0" TextWrapping="Wrap" Text="Повторите пароль" VerticalAlignment="Top" Width="140" Height="30" VerticalContentAlignment="Center"/>
+
+        <Label Content="Имя:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" FontSize="16" Margin="30,245,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <TextBox x:Name="textbox_name" HorizontalAlignment="Left" Margin="200,245,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="140" Height="30" VerticalContentAlignment="Center"/>
+
+        <Label Content="Фамилия:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" FontSize="16" Margin="30,285,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <TextBox x:Name="textbox_sname" HorizontalAlignment="Left" Margin="200,285,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="140" Height="30" VerticalContentAlignment="Center"/>
+
+        <Label Content="Пол:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" FontSize="16" Margin="30,325,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <ComboBox x:Name="combobox_gender" HorizontalAlignment="Left" Margin="200,325,0,0" VerticalAlignment="Top" Width="140" Height="30"/>
+
+        <Button Content="Фото" HorizontalAlignment="Right" Margin="0,125,30,0" VerticalAlignment="Top" Height="110" Width="100"/>
+
+        <Label Content="Фото файл:" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,210,138,0" VerticalAlignment="Top" RenderTransformOrigin="0.035,0.489" Width="140" Height="27"/>
+        <TextBox HorizontalAlignment="Right" Margin="0,245,138,0" TextWrapping="Wrap" Text="Photo_logo.jpg" VerticalAlignment="Top" Width="140" Height="30" FontSize="16" VerticalContentAlignment="Center"/>
+        <Button Content="Просмотр…" HorizontalAlignment="Right" Margin="0,245,30,0" VerticalAlignment="Top" Width="100" Height="30"/>
+
+        <Label Content="Дата рождения:" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0,285,185,0" VerticalAlignment="Top" Width="130" Height="30"/>
+        <DatePicker HorizontalAlignment="Right" Margin="0,285,30,0" VerticalAlignment="Top" Width="150" Height="30" VerticalContentAlignment="Center"/>
+
+        <Label Content="Страна:" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0,325,185,0" VerticalAlignment="Top" Width="130" Height="30"/>
+        <ComboBox HorizontalAlignment="Right" Margin="0,325,30,0" VerticalAlignment="Top" Width="150" Height="30"/>
+
+        <Button Content="Регистрация" Margin="240,0,0,15" VerticalAlignment="Bottom" Height="30" HorizontalAlignment="Left" Width="100"/>
+        <Button Content="Отмена" HorizontalAlignment="Right" Margin="0,0,240,15" VerticalAlignment="Bottom" Width="100" Height="30" Click="Button_Click"/>
+    </Grid>
+</Page>
